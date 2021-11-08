@@ -52,8 +52,9 @@ Fields `name` and `symbol` can be arbitrary, the only important field in `minter
 - ![image](https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png)
 
 - The contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. 
-## Minting original NFTs
-Now we can mint several original NFTs with `terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95` as an owner. For this, below you can find several mint messages that you can use:
+## Manual minting of original NFTs
+
+Currently, dNFT allows to mint only derivative NFTs. Original NFTs should be minted manually. Below are the sample transaction minting several NFTs with `terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95` as an owner.  
 
 - `{"mint":{"token_id":"vitalik_nakamoto", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/Qmf1FKrkPeipuhMdw8LUCXcwgd2QibB9vUmyJsaZXPkBeD"}}}`
 
