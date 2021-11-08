@@ -56,8 +56,8 @@ Note that only original minter, which is set when contract is created, can mint 
 
 Alternatively, you can deploy a brand new contract and make the dApp work with your contract by following the instruction below.
 
-# Manual Deployment (step-by-step instruction)
-## Creating contract
+# How to deploy your own contract (step-by-step instruction)
+## Uploadign and creating a contract
 
 Before you start, you will need Chrome with Terra Extention installed. 
 
