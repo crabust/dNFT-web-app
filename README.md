@@ -1,4 +1,4 @@
-# dcw721-dapp
+# dNFP - a proof-of-concept dApp that turns NFT collectors into co-creators
 Dynamic CW721 NFTs for Terra. A submission for https://gitcoin.co/issue/terra-money/bounties/2/100026890
 
 
