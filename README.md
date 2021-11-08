@@ -21,9 +21,7 @@ When dNFT is fully developed into an NFT marketplace, it will allow the creators
 # Using the dApp
 
 Connect to Terra Extension and wait for your collection to be loaded. Choose a content NFT (left) and apply to it the style of a another NFT (right). Try different parameeters and model settings. The resulting image can be minted as a derivative NFT. Click "Reload NFT Collection" to see your minted derivative.
-<p align="center">
-<img src="https://user-images.githubusercontent.com/4420479/140731951-3b484e92-bea6-4c2d-8dca-c38618549d69.png" width=50% height=50%>
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140731951-3b484e92-bea6-4c2d-8dca-c38618549d69.png" width=50% height=50%></p>
 
 # Building and Running locally
 To build dNFT dApp, install Yarn, go to the repository root and execute:
@@ -67,24 +65,24 @@ Before you start, you will need Chrome with Terra Extention installed.
     - `terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp` as a minter's account
     - `??` as an NFT owner's account
 - First, we need to login to Terra Extention and authorize in https://station.terra.money/contracts with the minter's account
-![image](https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png" width=50% height=50%></p>
 - Click "Upload" button, and upload cw721terra.wasm from https://github.com/akalmykov/dcw721-contract/ repository (see "artifacts")
  
-![image](https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png" width=50% height=50%></p>
 - In the "History" tab, find "Store" transaction for the code upload. You will see code_id (`18145`) in the transaction title.
-![image](https://user-images.githubusercontent.com/4420479/140627722-0fc199a8-574e-4f12-a42d-cccdf160106e.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627722-0fc199a8-574e-4f12-a42d-cccdf160106e.png" width=50% height=50%></p>
 - Alternatively, look at the transaction details and locate store code_id:
 
-![image](https://user-images.githubusercontent.com/4420479/140627739-acd20249-e7d5-47b4-996c-4a2f05424772.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627739-acd20249-e7d5-47b4-996c-4a2f05424772.png" width=50% height=50%></p>
 - Next, create a new contract with Code `18145` and InitMsg json as follows:
 `{"name":"dnft7", "symbol":"SMB", "minter":"terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp"}`
 Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by the owners to produce derivative NFTs.
 
-![image](https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png" width=50% height=50%></p>
 - After creating the contract, go to History tab and find `MsgInstantiateContract` transaction
-![image](https://user-images.githubusercontent.com/4420479/140627714-59027b81-e12e-40b5-9111-f761affefc15.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627714-59027b81-e12e-40b5-9111-f761affefc15.png" width=50% height=50%></p>
 - In this transaction details, locate `contract_address` field
-- ![image](https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png" width=50% height=50%></p>
 
 - The contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. 
 ## Manual minting of original NFTs
