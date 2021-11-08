@@ -150,9 +150,7 @@ class TerraClient {
 
 
   get_contract_address() {
-    //const contract_address = 'terra15nr8gcygpn9pq8urkzcf6hvzzvf0s2qt95hmjw';
-    const contract_address = 'terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth';
-    return contract_address;
+    return CONTRACT_ADDRESS;
   }
 
   

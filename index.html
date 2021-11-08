@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="ipfs-http-client.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-91864013-5');
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/0ba80eb71c.js" crossorigin="anonymous"></script>
+  <title>dNFT :: Co-creation platform </title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/0ba80eb71c.js" crossorigin="anonymous"></script>
-    <title>dNFT :: Co-creation platform </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <script src="ipfs-http-client.js"></script>
+  <script>
+    const CONTRACT_ADDRESS = "terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth";
+  </script>
 
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
- <!-- CSS Front Template -->
- <link rel="stylesheet" href="./assets/css/theme.min.css">
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> -->
-<script src="dist/bundle.js"></script>
+  <script src="dist/bundle.js"></script>
 </head>
 
 <style>
-.centered {
-  margin: auto;    
-  display: block;
-}
+  .centered {
+    margin: auto;
+    display: block;
+  }
 </style>
 
 <body>
@@ -37,229 +31,241 @@
 
   <!-- As a heading -->
 
-<!-- Hero -->
-<div class="overflow-hidden">
-  <div class="container content-space-t-1 content-space-b-3">
-    <div class="row justify-content-lg-between align-items-md-center">
-      <div class="col-md-6 col-lg-5 mb-7 mb-md-0">
-        <!-- Heading -->
-        <div class="mb-5">
-          <span class="text-cap">why just collect? </span>
-          <h1 class="display-4 mb-3">Unleash your creativity</h1>
-          <p class="lead">dNFT is proof-of-concept dApp that turns NFT collectors into co-creators.</p>
-        </div>
-        <!-- End Title & Description -->
+  <!-- Hero -->
+  <div class="overflow-hidden">
+    <div class="container content-space-t-1 content-space-b-3">
+      <div class="row justify-content-lg-between align-items-md-center">
+        <div class="col-md-6 col-lg-5 mb-7 mb-md-0">
+          <!-- Heading -->
+          <div class="mb-5">
+            <span class="text-cap">why just collect? </span>
+            <h1 class="display-4 mb-3">Unleash your creativity</h1>
+            <p class="lead">dNFT is proof-of-concept dApp that turns NFT collectors into co-creators.</p>
+          </div>
+          <!-- End Title & Description -->
 
-        <div class="d-grid d-sm-flex gap-3">
-          <a class="btn btn-primary btn-transition" href="#workshop">Let's go minting!</a>
-          <a class="btn btn-link" target="_blank" href="https://github.com/akalmykov/dcw721-dapp">View GitHub... <i class="bi-chevron-right small ms-1"></i></a>
+          <div class="d-grid d-sm-flex gap-3">
+            <a class="btn btn-primary btn-transition" href="#workshop">Let's go minting!</a>
+            <a class="btn btn-link" target="_blank" href="https://github.com/akalmykov/dcw721-dapp">View GitHub... <i
+                class="bi-chevron-right small ms-1"></i></a>
+          </div>
         </div>
-      </div>
-      <!-- End Col -->
+        <!-- End Col -->
 
-      <div class="col-md-6">
-        <div class="position-relative">
-          <img class="img-fluid rounded-2" src="../assets/svg/components/card-10.svg" alt="Image Description">
-          <div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img class="img-fluid rounded-2" src="../assets/svg/components/card-10.svg" alt="Image Description">
+            <div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
+          </div>
         </div>
+        <!-- End Col -->
       </div>
-      <!-- End Col -->
+      <!-- End Row -->
     </div>
-    <!-- End Row -->
   </div>
-</div>
-<!-- End Hero -->
+  <!-- End Hero -->
 
-<!-- Info -->
-<div class="container content-space-1 content-space-lg-1">
-  <!-- Title -->
-  <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-    <span class="text-cap">We are happy to introduce</span>
-    <h2>Derivative NFTs art works</h2>
-  </div>
-  <!-- End Title -->
-
-  <div class="w-md-75 mx-md-auto">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="pe-lg-4">
-          <p>Today NFT collections are mainly static and lifeless. 
-            <b>dNFT</b> uses Machine Learning to empower collectors and give them an opportunity to become co-creators.
-          Now they can mint NFT derivatives using the original NFT their own.</p> 
-          <p>
-          A collector chooses NFTs, derivation method and parameters. Our dApp generates unique artwork.
-          These derivatives will carry distinctive traits of the originals and could be algorithmically re-created at anytime.</p>
-        </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="col-lg-6">
-        <div class="ps-lg-4">
-          <p>NFT derivates open myriads of exciting opportunities. <b>Collectors</b> can grow their collections by minting unique derivatives. 
-            <b>Creators</b> can earn royalty not only from original works, but also from derivatives when they are sold or re-sold.</p>
-          <p>As a result, we all enjoy a more vibrant NFT econsystem :)</p>
-        </div>
-      </div>
-      <!-- End Col -->
+  <!-- Info -->
+  <div class="container content-space-1 content-space-lg-1">
+    <!-- Title -->
+    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <span class="text-cap">We are happy to introduce</span>
+      <h2>Derivative NFTs art works</h2>
     </div>
-    <!-- End Row -->
-  </div>
+    <!-- End Title -->
+
+    <div class="w-md-75 mx-md-auto">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="pe-lg-4">
+            <p>Today NFT collections are mainly static and lifeless.
+              <b>dNFT</b> uses Machine Learning to empower collectors and give them an opportunity to become
+              co-creators.
+              Now they can mint NFT derivatives using the original NFT their own.
+            </p>
+            <p>
+              A collector chooses NFTs, derivation method and parameters. Our dApp generates unique artwork.
+              These derivatives will carry distinctive traits of the originals and could be algorithmically re-created
+              at anytime.</p>
+            </p>
+          </div>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-6">
+          <div class="ps-lg-4">
+            <p>NFT derivates open myriads of exciting opportunities. <b>Collectors</b> can grow their collections by
+              minting unique derivatives.
+              <b>Creators</b> can earn royalty not only from original works, but also from derivatives when they are
+              sold or re-sold.
+            </p>
+            <p>As a result, we all enjoy a more vibrant NFT econsystem :)</p>
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
 
   </div>
-</div>
-<!-- End Info -->
-<div id="workshop" class="jumbotron jumbotron-fluid py-4" style="text-align: center; background-color: #f5f5f5;">
+  </div>
+  <!-- End Info -->
+  <div id="workshop" class="jumbotron jumbotron-fluid py-4" style="text-align: center; background-color: #f5f5f5;">
     <div class="container">
       <h5>Our first derivative generation method</h5>
       <h3>Neural Style Transfer</h3>
-      This proof-of-concept implements only one derivation method - Neural Style Transfer. 
+      This proof-of-concept implements only one derivation method - Neural Style Transfer.
       Neural Style Transfer attempts to re-draw one picture usig a style of another picture.
       It runs purely in browser and is implemented with TensorFlow.js
     </div>
   </div>
-<div class="">
-<div id="mobile-warning" hidden class="alert alert-warning" role="alert">
-  This site may have problems functioning on mobile devices. 
-  Don't worry, you can still read the description below!
-</div>
+  <div class="">
+    <div id="mobile-warning" hidden class="alert alert-warning" role="alert">
+      This site may have problems functioning on mobile devices.
+      Don't worry, you can still read the description below!
+    </div>
 
 
-<div class="row my-4 mx-5">
-  <div class="col-md-4 offset-md-4">
-    <h4>How to use it?</h4>
-    Choose a content NFT (left) and apply to it the style of a another NFT (right). The resulting image can be minted as a derivative NFT. <br/> <br/> 
-    The DApp initialy starts in demo mode with two images (Chicago and seaport). To work with your real NFTs, please connect with the Terra Extension for Chrome (Bombay-12 testnet). 
-  </div>
-</div>
+    <div class="row my-4 mx-5">
+      <div class="col-md-4 offset-md-4">
+        <h4>How to use it?</h4>
+        Choose a content NFT (left) and apply to it the style of a another NFT (right). The resulting image can be
+        minted as a derivative NFT. <br /> <br />
+        The DApp initialy starts in demo mode with two images (Chicago and seaport). To work with your real NFTs, please
+        connect with the Terra Extension for Chrome (Bombay-12 testnet).
+      </div>
+    </div>
 
-<div class="row my-4 mx-5">
-  <div class="col-md-4 offset-md-5">
-  
-        <button type="button" id="terra-extension-connect" class="btn btn-primary"> <span style="display: none;" id="connect-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <div class="row my-4 mx-5">
+      <div class="col-md-4 offset-md-5">
+
+        <button type="button" id="terra-extension-connect" class="btn btn-primary"> <span style="display: none;"
+            id="connect-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
           Connect to Terra Extension (Chrome)</button>
-  
-        <button style="display: none;" type="button" id="terra-reload" class="btn btn-success"> <span style="display: none;" id="reload-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+
+        <button style="display: none;" type="button" id="terra-reload" class="btn btn-success"> <span
+            style="display: none;" id="reload-spinner" class="spinner-border spinner-border-sm" role="status"
+            aria-hidden="true"></span>
           Reload NFT collection</button>
-  
-  </div>
-</div>
 
-<!-- <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="stylize-tab" data-toggle="tab" href="#stylize" role="tab" aria-controls="stylize" aria-selected="true">Stylize an image</a>
-  </li>
-</ul> -->
-<!-- <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="stylize" role="tabpanel" aria-labelledby="stylize-tab"> -->
-      <div class="container">
+      </div>
+    </div>
 
-        <div class="row my-4">
-          <div class="col mx-5 my-4">
-              <img crossorigin="anonymous" id="content-img" class="centered" src="images/chicago.jpg" height=256></img>
-              <br>
-              <label for="content-img-size">Content NFT size</label>
-              <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-              title="A bigger content image results in a more detailed output, but increases the processing time significantly."></i>
-              <input type="range" min="256" max="400" value="256" class="form-range centered" id="content-img-size" >
-              <br>
-              <select id="content-select" class="centered form-select">
-                <option value="" disabled>Select content</option>
-                <option value="chicago" selected="selected">chicago</option>
-              </select>
-          </div>
-          <div class="col mx-5 my-4">
-              <img id="style-img" class="centered" crossorigin="anonymous" src="images/seaport.jpg" height=256></img>
-              <br>
-              <label for="style-img-size">Style NFT size</label>
-              <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
-              title='Changing the size of a style image usually affects the texture "seen" by the network.'></i>
-              <input type="range" min="100" max="400" value="256" class="form-range centered" id="style-img-size">
-              <br>
-              <select id="style-select" class="centered form-select">
-                <option value="" disabled>Select a style</option>
-                <option value="seaport" selected="selected">seaport</option>
-              </select>
-          </div>
+    <div class="container">
+
+      <div class="row my-4">
+        <div class="col mx-5 my-4">
+          <img crossorigin="anonymous" id="content-img" class="centered" src="images/chicago.jpg" height=256></img>
+          <br>
+          <label for="content-img-size">Content NFT size</label>
+          <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top"
+            title="A bigger content image results in a more detailed output, but increases the processing time significantly."></i>
+          <input type="range" min="256" max="400" value="256" class="form-range centered" id="content-img-size">
+          <br>
+          <select id="content-select" class="centered form-select">
+            <option value="" disabled>Select content</option>
+            <option value="chicago" selected="selected">chicago</option>
+          </select>
         </div>
-        <div class="row ">
-          <div class="col-md-6 offset-md-3">
-            <canvas id="stylized" class="centered"></canvas>
-            <br>
-            <label for="stylized-img-ratio">Stylization strength</label>
-            <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" 
+        <div class="col mx-5 my-4">
+          <img id="style-img" class="centered" crossorigin="anonymous" src="images/seaport.jpg" height=256></img>
+          <br>
+          <label for="style-img-size">Style NFT size</label>
+          <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top"
+            title='Changing the size of a style image usually affects the texture "seen" by the network.'></i>
+          <input type="range" min="100" max="400" value="256" class="form-range centered" id="style-img-size">
+          <br>
+          <select id="style-select" class="centered form-select">
+            <option value="" disabled>Select a style</option>
+            <option value="seaport" selected="selected">seaport</option>
+          </select>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 offset-md-3">
+          <canvas id="stylized" class="centered"></canvas>
+          <br>
+          <label for="stylized-img-ratio">Stylization strength</label>
+          <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top"
             title="This parameter affects the stylization strength. The further to the right, the stronger the stylization. This is done via interpolation between the style vectors of the content and style images."></i>
-            <br>
+          <br>
 
-            <input type="range" min="0" max="100" value="100" class="form-range centered" id="stylized-img-ratio">
-          </div>
+          <input type="range" min="0" max="100" value="100" class="form-range centered" id="stylized-img-ratio">
         </div>
-        <div class="row my-4">
-          <div class="col-md-6 offset-md-3">
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-info " isabled id="style-button" type="button">Loading stylization model. Please wait..</button>
-              <button class="btn  btn-warning" disabled id="mint"  type="button"><span style="display: none;" id="mint-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Mint      </button>
-            </div>  
-              <!-- <button disabled id="style-button" type="button" class="btn btn-primary btn-block">Loading stylization model. Please wait..</button> -->
+      </div>
+      <div class="row my-4">
+        <div class="col-md-6 offset-md-3">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-info " isabled id="style-button" type="button">Loading stylization model. Please
+              wait..</button>
+            <button class="btn  btn-warning" disabled id="mint" type="button"><span style="display: none;"
+                id="mint-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Mint
+            </button>
           </div>
-          <!-- <div class="col-md-1">
+          <!-- <button disabled id="style-button" type="button" class="btn btn-primary btn-block">Loading stylization model. Please wait..</button> -->
+        </div>
+        <!-- <div class="col-md-1">
               <button type="button" disabled id="mint" class="btn btn-danger"> Mint </button>
           </div> -->
-        </div>
       </div>
-  <!-- </div>
+    </div>
+    <!-- </div>
 </div> -->
 
-<div class="container">
-  <div class="row my-4">
-    <div class="col-md-3 offset-md-3">
-        <select disabled id="model-select-style" class="centered form-select">
-          <option value="mobilenet" selected="selected">[Fast] Distilled MobileNet style model (9.6MB)</option>
-          <option value="inception" >[High quality] Original Inceptionv3 style model (36.3MB)</option>
-        </select>
-    </div>
-    <div class="col-md-3">
-        <select disabled id="model-select-transformer" class="centered form-select">
-          <option value="separable" selected="selected">[Fast] Separable_conv2d transformer (2.4MB)</option>
-          <option value="original" >[High quality] Original transformer model (7.9MB)</option>
-        </select>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Minting result</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Your NFT with id "<span id="minted-token-id"></span>" has been successfully minted! Click "Reload NFT collection" button to see it in the list.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-md-3 offset-md-3">
+          <select disabled id="model-select-style" class="centered form-select">
+            <option value="mobilenet" selected="selected">[Fast] Distilled MobileNet style model (9.6MB)</option>
+            <option value="inception">[High quality] Original Inceptionv3 style model (36.3MB)</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select disabled id="model-select-transformer" class="centered form-select">
+            <option value="separable" selected="selected">[Fast] Separable_conv2d transformer (2.4MB)</option>
+            <option value="original">[High quality] Original transformer model (7.9MB)</option>
+          </select>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+    <!-- Modal -->
+    <div id="exampleModalCenter" class="modal fade" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Minting result</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Your NFT with id "<span id="minted-token-id"></span>" has been successfully minted! Click "Reload NFT
+              collection" button to see it in the list.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
-<script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript">
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 </body>
+
 </html>
