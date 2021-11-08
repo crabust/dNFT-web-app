@@ -14,8 +14,16 @@ Any derivative NFT stores links (`token_id`) of the original NFTs and generation
 - traceback any derivative back to the original artwork
 - prove the ownership of the original NFTs in time of minting a derivative
 - deterministically recreate any derivative artwork from sources
+- make derivatives unique: the owner can't mint several derivatives with the same "derivation" method
 
 When dNFT is fully developed into an NFT marketplace, it will allow the creators earn royalties from sale and re-sale of the derivatives based on their original NFTs. 
+
+# Using the dApp
+
+Connect to Terra Extension and wait for your collection to be loaded. Choose a content NFT (left) and apply to it the style of a another NFT (right). The resulting image can be minted as a derivative NFT. Click "Reload NFT Collection" to see your minted derivative.
+
+<img src="https://user-images.githubusercontent.com/4420479/140729513-ac96bcac-6eec-41fa-b4c8-5c8d04c1d12e.png" width=50% height=50%>
+
 
 # Building and Running locally
 To build dNFT dApp, install Yarn, go to the repository root and execute:
