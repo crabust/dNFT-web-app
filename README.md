@@ -7,9 +7,9 @@ This dApp is a [DeFi & Cross-chain Interoperability Hackathon](https://gitcoin.c
 
 dNFT is a dApp that give NFT collectors an opportunity to mint derivtive NFT artworks based on the NFTs they already own. The derivative NFTs are procedurally generated based original NFTs and are fully owned by a collector. 
 
-This proof-of-concept dApp supports one generation method - Nerual Style Transfer. However, in the future, it support several generation methods and would allow adding new as plugins. The smart contract behind dNFT is based on cw721 standard with metadata extension (see [dcw721-contract repository](https://github.com/akalmykov/dcw721-contract/)). 
+This proof-of-concept dApp supports one generation method - Nerual Style Transfer. However, in the future, dNFT will support several generation methods and would allow adding new as plugins. 
 
-Any derivative NFT stores links (`token_id`) of the original NFTs and generation parameters. This allows to
+The smart contract behind dNFT is based on cw721 standard with metadata extension (see [dcw721-contract repository](https://github.com/akalmykov/dcw721-contract/)). Any derivative NFT stores links (`token_id`) of the original NFTs and generation parameters. This allows to
 
 - traceback any derivative back to the original artwork
 - prove the ownership of the original NFTs in time of minting a derivative
