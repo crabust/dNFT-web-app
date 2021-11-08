@@ -38,7 +38,7 @@ Open the dApp in Google Chrome with Terra Extension installed.
 
 # Live Demo on Bombay-12 testnet
 
-The live demo is available here: http://dare2defy.xyz
+The live demo is available here: https://dare2defy.xyz
 
 You can use one of the following ready-made test accounts with original, pre-minted NFTs:
 | Account   | Address                                                                                                  | Mnemonic                                                                                                                                                                   |
