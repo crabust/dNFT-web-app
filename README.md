@@ -67,7 +67,7 @@ Before you start, you will need Chrome with Terra Extention installed.
 - First, we need to login to Terra Extention and authorize in https://station.terra.money/contracts with the minter's account
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png" width=50% height=50%></p>
 
-- Click "Upload" button, and upload cw721terra.wasm from https://github.com/akalmykov/dcw721-contract/ repository (see "artifacts")
+- Click "Upload" button, and upload cw721terra.wasm from the [contract repository](https://github.com/akalmykov/dcw721-contract/) (see `artifacts` directory)
  
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png" width=50% height=50%></p>
 
