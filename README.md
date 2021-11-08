@@ -1,5 +1,19 @@
-# dNFT - NFT co-creation platform
-Dynamic CW721 NFTs for Terra. A submission for https://gitcoin.co/issue/terra-money/bounties/2/100026890
+# dNFT: NFT derivatives dApp 
+
+This dApp is a [DeFi & Cross-chain Interoperability Hackathon](https://gitcoin.co/issue/terra-money/bounties/2/100026890) submission.
+
+dNFT is a dApp that give NFT collectors an opportunity to mint derivtive NFT artworks based on the NFTs they already own. The derivative NFTs are procedurally generated based original NFTs and are fully owned by a collector. 
+
+This proof-of-concept dApp supports one generation method - Nerual Style Transfer. However, in the future, it support several generation methods and would allow adding new as plugins. The smart contract behind dNFT is based on cw721 standard with metadata extension (see [dcw721-contract repository](https://github.com/akalmykov/dcw721-contract/)). 
+
+Any derivative NFT stores links (`token_id`) of the original NFTs and generation parameters. This allows to
+
+- traceback any derivative back to the original artwork
+- prove the ownership of the original NFTs in time of minting a derivative
+- deterministically recreate any derivative artwork from sources
+
+When dNFT is fully developed into an NFT marketplace, it will allow the creators earn royalties from sale and re-sale of the derivatives based on their original NFTs. 
+
 
 
 # Building and Running locally
