@@ -14,7 +14,7 @@ The smart contract behind dNFT is based on cw721 standard with metadata extensio
 - traceback any derivative back to the original artwork
 - prove the ownership of the original NFTs in time of minting a derivative
 - deterministically recreate any derivative artwork from sources
-- make derivatives unique: the owner can't mint several derivatives with the same "derivation" method
+- make derivatives unique: an owner can't mint several derivatives with the same "derivation" method
 
 When dNFT is fully developed into an NFT marketplace, it will allow the creators earn royalties from sale and re-sale of the derivatives based on their original NFTs. 
 
@@ -63,7 +63,7 @@ Before you start, you will need Chrome with Terra Extention installed.
 
 - Create two Terra accounts: an original minter's account and an ownwer's account. They both will need some LUNA balance to pay for gas fees. For illustration, we are going to use
     - `terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp` as a minter's account
-    - `??` as an NFT owner's account
+    - `terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95` as an NFT owner's account
 - First, we need to login to Terra Extention and authorize in https://station.terra.money/contracts with the minter's account
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png" width=50% height=50%></p>
 
@@ -82,7 +82,7 @@ Before you start, you will need Chrome with Terra Extention installed.
 
 `{"name":"dnft7", "symbol":"SMB", "minter":"terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp"}`
 
-Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by the owners to produce derivative NFTs.
+Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by their owners to produce derivative artwork.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png" width=50% height=50%></p>
 
