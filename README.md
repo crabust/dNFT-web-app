@@ -69,13 +69,15 @@ Before you start, you will need Chrome with Terra Extention installed.
 - Click "Upload" button, and upload cw721terra.wasm from https://github.com/akalmykov/dcw721-contract/ repository (see "artifacts")
  
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png" width=50% height=50%></p>
-- In the "History" tab, find "Store" transaction for the code upload. You will see code_id (`18145`) in the transaction title.
+- In the "History" tab, find "Store" transaction for the code upload. You will see code_id 18145 in the transaction title.
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627722-0fc199a8-574e-4f12-a42d-cccdf160106e.png" width=50% height=50%></p>
 - Alternatively, look at the transaction details and locate store code_id:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627739-acd20249-e7d5-47b4-996c-4a2f05424772.png" width=50% height=50%></p>
-- Next, create a new contract with Code `18145` and InitMsg json as follows:
+- Next, create a new contract with Code 18145 and InitMsg json as follows:
+
 `{"name":"dnft7", "symbol":"SMB", "minter":"terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp"}`
+
 Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by the owners to produce derivative NFTs.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png" width=50% height=50%></p>
@@ -107,4 +109,4 @@ Currently, dNFT allows to mint only derivative NFTs. Original NFTs should be min
 
 - `{"mint":{"token_id":"78022", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmeeeLBTgMKSGybSMj44SoWR5XseiJHB8ratq25qggUaGs"}}}`
 
-
+**Note**: If you mint new NFTs, make sure that they have unique `token_id` values.
