@@ -21,6 +21,7 @@ When dNFT is fully developed into an NFT marketplace, it will allow the creators
 To build dNFT dApp, install Yarn, go to the repository root and execute:
 
 `yarn install`
+
 `yarn build`
 
 To launch dNFT locally, run:
