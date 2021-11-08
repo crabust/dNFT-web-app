@@ -52,7 +52,11 @@ You can use one of the following ready-made test accounts with original, pre-min
 
 You can use them to test the dApp and derivative minting using a pre-deployed contract `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth` on Bombay-12 testnet.
 
-Alternatively, you can deploy a new contract and make the dApp work with your contract by following the instruction below.
+Note that only original minter, which is set when contract is created, can mint original NFTs. If you want to mint new original NFTs, you can use minter's account `terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp` with mnemonics
+
+`quality vacuum heart guard buzz spike sight swarm shove special gym robust assume sudden deposit grid alcohol choice devote leader tilt noodle tide penalty`
+
+Alternatively, you can deploy a brand new contract and make the dApp work with your contract by following the instruction below.
 
 # Manual Deployment (step-by-step instruction)
 ## Creating contract
