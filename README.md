@@ -1,1 +1,57 @@
-dcw721-dapp
+# dcw721-dapp
+Dynamic CW721 NFTs for Terra. A submission for https://gitcoin.co/issue/terra-money/bounties/2/100026890
+
+# Test data
+You will find ready-made test accounts with corresponding mnemonics in the description of the video submission. Alternatively, you can do everything from the scratch following the instruction below.
+
+# Step-by-step instruction for Bombay-12 testnet
+## Creating contract
+
+Before you start, you will need Chrome with Terra Extention installed. 
+
+- Create two Terra accounts: an original minter's account and an ownwer's account. They both will need some LUNA balance to pay for gas fees. For illustration, we are going to use
+    - `terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp` as a minter's account
+    - `??` as an NFT owner's account
+- First, we need to login to Terra Extention and authorize in https://station.terra.money/contracts with the minter's account
+![image](https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png)
+- Click "Upload" button, and upload cw721terra.wasm from https://github.com/akalmykov/dcw721-contract/ repository (see "artifacts")
+ 
+![image](https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png)
+- In the "History" tab, find "Store" transaction for the code upload. You will see code_id (`18145`) in the transaction title.
+![image](https://user-images.githubusercontent.com/4420479/140627722-0fc199a8-574e-4f12-a42d-cccdf160106e.png)
+- Alternatively, look at the transaction details and locate store code_id:
+
+![image](https://user-images.githubusercontent.com/4420479/140627739-acd20249-e7d5-47b4-996c-4a2f05424772.png)
+- Next, create a new contract with Code `18145` and InitMsg json as follows:
+`{"name":"dnft7", "symbol":"SMB", "minter":"terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp"}`
+Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by the owners to produce derivative NFTs.
+
+![image](https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png)
+- After creating the contract, go to History tab and find `MsgInstantiateContract` transaction
+![image](https://user-images.githubusercontent.com/4420479/140627714-59027b81-e12e-40b5-9111-f761affefc15.png)
+- In this transaction details, locate `contract_address` field
+- ![image](https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png)
+
+- The contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. 
+## Minting original NFTs
+Now we can mint several original NFTs with `terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95` as an owner. For this, below you can find several mint messages that you can use:
+
+- `{"mint":{"token_id":"vitalik_nakamoto", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/Qmf1FKrkPeipuhMdw8LUCXcwgd2QibB9vUmyJsaZXPkBeD"}}}`
+
+- `{"mint":{"token_id":"becca_notices", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmYvKtfCLZaNbM9D1f2TsCPSaaDYNu6dB6f8M5gcVCu7uU"}}}`
+
+- `{"mint":{"token_id":"bored_ape", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmUZw1yGJexUyvsCeX6QPYsFJJfShCsqvkvEhdDHJuzMWZ"}}}`
+
+- `{"mint":{"token_id":"towers", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmYgfE5seqrh2khVH8WTdLTLMySA4Wzse18ghQ5i5Kdh5C"}}}`
+
+- `{"mint":{"token_id":"trees", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmeXTrnoVsPdqiUpzkcrmZRWC8jC6e4FK23HYFhc1sDDGw"}}}`
+
+- `{"mint":{"token_id":"lizard", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmQP321saFCEJPMA86sY2pCkUNFn1NQ9woLuLtYHmn5nz5"}}}`
+
+- `{"mint":{"token_id":"tyler", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmQVDGwSvigtCZwG8N3j7a1b6LWsgudwgcsTjakncmrXte"}}}`
+
+- `{"mint":{"token_id":"f1", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmerJuL4RPs9s6huJyGQT3sPp32RonHg6vnRgxVe5YpNGZ"}}}`
+
+- `{"mint":{"token_id":"78022", "owner":"terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95", "extension": {"external_url": "https://ipfs.infura.io/ipfs/QmeeeLBTgMKSGybSMj44SoWR5XseiJHB8ratq25qggUaGs"}}}`
+
+
