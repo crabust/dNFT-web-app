@@ -40,11 +40,18 @@ Open the dApp in Google Chrome with Terra Extension installed.
 
 # Live Demo on Bombay-12 testnet
 
-These are ready-made test accounts with original, pre-minted NFTs.
+The live demo is available here: http://dare2defy.xyz
 
-...
+You can use one of the following ready-made test accounts with original, pre-minted NFTs:
+| Account   | Address                                                                                                  | Mnemonic                                                                                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| test5     | `terra18wlvftxzj6zt0xugy2lr9nxzu402690ltaf4ss`                                                           | `second render cat sing soup reward cluster island bench diet lumber grocery repeat balcony perfect diesel stumble piano distance caught occur example ozone loyal`        |
+| test7     | `terra17tv2hvwpg0ukqgd2y5ct2w54fyan7z0zxrm2f9`                                                           | `noble width taxi input there patrol clown public spell aunt wish punch moment will misery eight excess arena pen turtle minimum grain vague inmate`                       |
+| test9     | `terra1333veey879eeqcff8j3gfcgwt8cfrg9mq20v6f`                                                           | `index light average senior silent limit usual local involve delay update rack cause inmate wall render magnet common feature laundry exact casual resource hundred`       |
+| test11    | `terra1jh0v64kew5agna23gzg6akuyqd46nrsk8kudks`                                                           | `october next pepper inject angry climb observe enable merry rebuild worry rhythm shallow throw panda cloud capital sunset insane badge maximum shoot destroy flag`     |
 
 You can use them to test the dApp and derivative minting using a pre-deployed contract `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth` on Bombay-12 testnet.
+
 Alternatively, you can deploy a new contract and make the dApp work with your contract by following the instruction below.
 
 # Manual Deployment (step-by-step instruction)
