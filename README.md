@@ -92,11 +92,13 @@ Fields `name` and `symbol` can be arbitrary, the only important field in `minter
 - In this transaction details, locate `contract_address` field
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png" width=50% height=50%></p>
 
-- Your contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. Open `index.html`, find `CONTRACT_ADDRESS` in the `<head>` section and change it your contract address
+- Your contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. Open `index.html`, find `CONTRACT_ADDRESS` in the `<head>` section and change it to your contract address:
 
-`<script>
-    const CONTRACT_ADDRESS = "terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth";
-</script>`
+```
+<script>  
+    const CONTRACT_ADDRESS = "terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth";      
+</script>
+```
 
 
 ## Manual minting of original NFTs
