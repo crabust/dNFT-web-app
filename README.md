@@ -66,14 +66,18 @@ Before you start, you will need Chrome with Terra Extention installed.
     - `??` as an NFT owner's account
 - First, we need to login to Terra Extention and authorize in https://station.terra.money/contracts with the minter's account
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627523-4503e432-3e6e-44dc-84e6-c8c8de97f0d1.png" width=50% height=50%></p>
+
 - Click "Upload" button, and upload cw721terra.wasm from https://github.com/akalmykov/dcw721-contract/ repository (see "artifacts")
  
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627562-a910040d-b5e9-464b-bde2-b1bae40bd01e.png" width=50% height=50%></p>
+
 - In the "History" tab, find "Store" transaction for the code upload. You will see code_id 18145 in the transaction title.
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627722-0fc199a8-574e-4f12-a42d-cccdf160106e.png" width=50% height=50%></p>
+
 - Alternatively, look at the transaction details and locate store code_id:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627739-acd20249-e7d5-47b4-996c-4a2f05424772.png" width=50% height=50%></p>
+
 - Next, create a new contract with Code 18145 and InitMsg json as follows:
 
 `{"name":"dnft7", "symbol":"SMB", "minter":"terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp"}`
@@ -81,12 +85,20 @@ Before you start, you will need Chrome with Terra Extention installed.
 Fields `name` and `symbol` can be arbitrary, the only important field in `minter`. Only this address can mint original NFTs, which could be later used by the owners to produce derivative NFTs.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645746-6bfd1330-55ce-4897-b905-978354049c6c.png" width=50% height=50%></p>
+
 - After creating the contract, go to History tab and find `MsgInstantiateContract` transaction
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140627714-59027b81-e12e-40b5-9111-f761affefc15.png" width=50% height=50%></p>
+
 - In this transaction details, locate `contract_address` field
 <p align="center"><img src="https://user-images.githubusercontent.com/4420479/140645930-d0da648a-eb48-451b-8831-a938abdfdf50.png" width=50% height=50%></p>
 
-- The contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. 
+- Your contract address is `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth`. Open `index.html`, find `CONTRACT_ADDRESS` in the `<head>` section and change it your contract address
+
+`<script>
+    const CONTRACT_ADDRESS = "terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth";
+</script>`
+
+
 ## Manual minting of original NFTs
 
 Currently, dNFT allows to mint only derivative NFTs. Original NFTs should be minted manually. Below are the sample transaction minting several NFTs with `terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95` as an owner.  
