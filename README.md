@@ -2,8 +2,7 @@
 Dynamic CW721 NFTs for Terra. A submission for https://gitcoin.co/issue/terra-money/bounties/2/100026890
 
 
-# Building 
-
+# Building and Running locally
 To build dNFT dApp, install Yarn, go to the repository root and execute:
 
 `yarn install
@@ -13,10 +12,18 @@ To launch dNFT locally, run:
 
 `yarn run start`
 
-# Live Demo 
-You will find ready-made test accounts with corresponding mnemonics in the description of the video submission. Alternatively, you can do everything from the scratch following the instruction below.
+Open the dApp in Google Chrome with Terra Extension installed.
 
-# Step-by-step instruction for Bombay-12 testnet
+# Live Demo on Bombay-12 testnet
+
+These are ready-made test accounts with original, pre-minted NFTs.
+
+...
+
+You can use them to test the dApp and derivative minting using a pre-deployed contract `terra1zzf3207sepmhs2t8f2j0zwsklgahrtchn5hxth` on Bombay-12 testnet.
+Alternatively, you can deploy a new contract and make the dApp work with your contract by following the instruction below.
+
+# Manual Deployment (step-by-step instruction)
 ## Creating contract
 
 Before you start, you will need Chrome with Terra Extention installed. 
