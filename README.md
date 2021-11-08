@@ -20,9 +20,9 @@ When dNFT is fully developed into an NFT marketplace, it will allow the creators
 
 # Using the dApp
 
-Connect to Terra Extension and wait for your collection to be loaded. Choose a content NFT (left) and apply to it the style of a another NFT (right). The resulting image can be minted as a derivative NFT. Click "Reload NFT Collection" to see your minted derivative.
+Connect to Terra Extension and wait for your collection to be loaded. Choose a content NFT (left) and apply to it the style of a another NFT (right). Try different parameeters and model settings. The resulting image can be minted as a derivative NFT. Click "Reload NFT Collection" to see your minted derivative.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/4420479/140729513-ac96bcac-6eec-41fa-b4c8-5c8d04c1d12e.png" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/4420479/140731951-3b484e92-bea6-4c2d-8dca-c38618549d69.png" width=50% height=50%>
 </p>
 
 # Building and Running locally
