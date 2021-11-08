@@ -1,6 +1,9 @@
 # dNFT: NFT derivatives dApp 
 
-This dApp is a [DeFi & Cross-chain Interoperability Hackathon](https://gitcoin.co/issue/terra-money/bounties/2/100026890) submission.
+This dApp is a [DeFi & Cross-chain Interoperability Hackathon](https://gitcoin.co/issue/terra-money/bounties/2/100026890) submission and consists of two parts:
+
+- [front-end dApp](https://github.com/akalmykov/dcw721-dapp/), this repository
+- [a cw721 contract with metadata extension](https://github.com/akalmykov/dcw721-contract/)
 
 dNFT is a dApp that give NFT collectors an opportunity to mint derivtive NFT artworks based on the NFTs they already own. The derivative NFTs are procedurally generated based original NFTs and are fully owned by a collector. 
 
@@ -13,8 +16,6 @@ Any derivative NFT stores links (`token_id`) of the original NFTs and generation
 - deterministically recreate any derivative artwork from sources
 
 When dNFT is fully developed into an NFT marketplace, it will allow the creators earn royalties from sale and re-sale of the derivatives based on their original NFTs. 
-
-
 
 # Building and Running locally
 To build dNFT dApp, install Yarn, go to the repository root and execute:
