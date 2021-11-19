@@ -5,7 +5,7 @@ This dApp is a [DeFi & Cross-chain Interoperability Hackathon](https://gitcoin.c
 - [front-end dApp](https://github.com/akalmykov/dcw721-dapp/), this repository
 - [a custom cw721-compatible contract with metadata extension](https://github.com/akalmykov/dcw721-contract/)
 
-dNFT is a dApp that give NFT collectors an opportunity to mint derivtive NFT artworks based on the NFTs they already own. The derivative NFTs are procedurally generated based original NFTs and are fully owned by a collector. dNFT is completely decentralized, has no backend and all maginc happens right in your browser.
+dNFT is a dApp that give NFT collectors an opportunity to mint derivtive NFT artworks based on the NFTs they already own. The derivative NFTs are procedurally generated based original NFTs and are fully owned by a collector. dNFT is completely decentralized, has no backend and all magic happens right in your browser.
 
 This proof-of-concept dApp supports one generation method - Nerual Style Transfer. However, in the future, dNFT will support several generation methods and would allow adding new as plugins. 
 
